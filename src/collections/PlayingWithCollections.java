@@ -13,6 +13,7 @@ public class PlayingWithCollections {
         playWithLists();
         playWithSet();
         playWithMaps();
+        searchTimes();
     }
 
     public static void playWithLists() {
@@ -126,7 +127,7 @@ public class PlayingWithCollections {
         // brug metoden System.currentTimeMillis() til at tage tid.
         // Eksempel:
         List<Student> studlist = new ArrayList<>();
-        DataReader.fillWithStudents(studlist, 1000);
+        DataReader.fillWithStudents(studlist, 100000000);
 
         // starttid
         long start = System.currentTimeMillis();
